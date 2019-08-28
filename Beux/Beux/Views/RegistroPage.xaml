@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:Beux.Controls" 
+             xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             mc:Ignorable="d"
+             x:Class="Beux.Views.RegistroPage" BackgroundColor="#fff5ed">
+    <ContentPage.Content>
+        <ScrollView Style="{StaticResource ScrollViewStyle}">
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Grid Style="{StaticResource GridStyle}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Entry x:Name="nickname" Grid.Row="1" Grid.ColumnSpan="3"  Style="{StaticResource EntryStyle}" Placeholder="Nickname"/>
+                    <Entry x:Name="email" Grid.Row="2" Grid.ColumnSpan="3" Style="{StaticResource EntryStyle}" Keyboard="Email" Text="{Binding Username}" Placeholder="Email"/>
+                    <Entry x:Name="celular" Grid.Row="3" Grid.ColumnSpan="2" Style="{StaticResource EntryStyle}" Keyboard="Numeric" Placeholder="Célular"/>
+
+                    <Entry x:Name="codPromocional" Grid.Row="3" Grid.Column="2" Style="{StaticResource EntryStyle}" Placeholder="Código Promocional"/>
+                    <Picker x:Name="genero" Title="Género" Grid.Row="3"  Grid.ColumnSpan="3" >
+                        <Picker.Items>
+                            <x:String>Masculino</x:String>
+                            <x:String>Femenino</x:String>
+                            <x:String>Otro</x:String>
+
+                        </Picker.Items>
+                    </Picker>
+                    <Entry x:Name="password" Grid.Row="5" Grid.ColumnSpan="3"  Style="{StaticResource EntryStyle}" Placeholder="Contraseña" IsPassword="True" Text="{Binding Password}"/>
+                    <Entry x:Name="passwordconf" Grid.Row="6" Grid.ColumnSpan="3"  Style="{StaticResource EntryStyle}" Placeholder="Confirmar contraseña" IsPassword="True"/>
+
+                    
+
+                    <Label x:Name="anexarlbl" Grid.Row="7" Grid.Column="0"  Text="Anexar Fotografías" TextColor="#cf453c"  Style="{StaticResource LabelStyle}" Margin="3,3,3,3" VerticalOptions="CenterAndExpand"   />
+                    <ic:CircleImage 
+                    VerticalOptions="Center"
+                    
+                    x:Name="takePhoto" Grid.Row="7" Grid.Column="1"  HeightRequest="50" WidthRequest="50" Source="camara.png">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnclickTakePhoto" />
+                        </Image.GestureRecognizers>
+                    </ic:CircleImage>
+                    <ic:CircleImage 
+                    VerticalOptions="Center"
+                    
+                     x:Name="pickPhoto" Grid.Row="7" Grid.Column="2"  HeightRequest="50" WidthRequest="50" Source="carpeta.png">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnclickPickPhoto" />
+                        </Image.GestureRecognizers>
+                    </ic:CircleImage>
+
+                    <ic:CircleImage x:Name="image"  Grid.Row="8" Grid.ColumnSpan="3" HorizontalOptions="CenterAndExpand" />
+
+                    <controls:CheckBox Grid.Row="9"  Grid.ColumnSpan="3" HeightRequest="100" WidthRequest="100" x:Name="mayorEdad" Text="Soy Mayor de Edad" IsChecked="{Binding YourProperty}" Type="Check" Color="#cf453c" />
+
+                    <controls:CheckBox Grid.Row="10" Grid.ColumnSpan="3" x:Name="termconds" Text="¿Acepta Términos y Condiciones ?" IsChecked="{Binding YourProperty}" Type="Check" Color="#cf453c" />
+
+                    <Button x:Name="registrar" Grid.Row="11" Grid.ColumnSpan="3"  Style="{StaticResource ButtonActStyle}" Text="Registrar" Command="{Binding SignUpCommand}" Clicked="OnClickedFinalizar" />
+                </Grid>
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

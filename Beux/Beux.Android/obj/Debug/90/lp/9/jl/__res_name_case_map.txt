@@ -1,0 +1,10 @@
+Layout/SegmentedControl.axml;layout/segmentedcontrol.xml
+Color/segmented_control_text.xml;color/segmented_control_text.xml
+Drawable/segmented_control_background.xml;drawable/segmented_control_background.xml
+Drawable/segmented_control_first_background.xml;drawable/segmented_control_first_background.xml
+Drawable/segmented_control_last_background.xml;drawable/segmented_control_last_background.xml
+Values/Attrs.xml;values/attrs.xml
+Values/Colors.xml;values/colors.xml
+Values/Dimens.xml;values/dimens.xml
+Values/Strings.xml;values/strings.xml
+Values/Styles.xml;values/styles.xml

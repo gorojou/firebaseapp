@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:views="clr-namespace:Beux.Views"
+             x:Class="Beux.Views.EncuentroPage">
+    <ContentPage.Content>
+        <ScrollView Style="{StaticResource ScrollViewStyle}">
+            <StackLayout Style="{StaticResource StackLayoutStyle}"  >
+                <Grid Style="{StaticResource GridStyle}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="300"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="300"/>
+                       
+                    </Grid.RowDefinitions>
+
+                    
+                    <views:MapPage  Grid.Row="0" Grid.ColumnSpan="2"/>
+                    <views:RoomPage  Grid.Row="2" Grid.ColumnSpan="2"/>
+
+                </Grid>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

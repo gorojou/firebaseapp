@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:custom="clr-namespace:Beux.Controls"
+             mc:Ignorable="d"
+             xmlns:Common="clr-namespace:Beux.Helper"
+             x:Class="Beux.Views.ExtensionPage" BackgroundColor="#fff5ed">
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource StackLayoutStyle}"  >
+            <Grid Style="{StaticResource GridStyle}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="256"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="128"/>
+                </Grid.RowDefinitions>
+                <custom:CustomEntry x:Name="propuesta" Grid.Row="0" Grid.ColumnSpan="2" Style="{StaticResource EntryStyle}" Placeholder="Propuesta económicas" Keyboard="Numeric">
+                </custom:CustomEntry>
+                <custom:CustomEntry x:Name="horas" Grid.Row="1" Grid.ColumnSpan="2" Style="{StaticResource EntryStyle}" Placeholder="Por Horas" Keyboard="Numeric">
+                </custom:CustomEntry>
+
+                <Button x:Name="si" Grid.Row="3" Grid.Column="0" Style="{StaticResource ButtonActStyle}" Text="Si"  />
+
+                <Button x:Name="no" Grid.Row="3" Grid.Column="1" Style="{StaticResource ButtonActStyle}" Text="No"  Clicked="OnNOClicked" />
+               
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:views="clr-namespace:Beux.Views"
+            xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+             xmlns:controls="clr-namespace:Beux.Controls"
+             xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             
+             x:Class="Beux.Views.TomadeServicioPage" BackgroundColor="#fff5ed">
+    <ContentPage.Content>
+        <ScrollView Style="{StaticResource ScrollViewStyle}">
+            <StackLayout Style="{StaticResource StackLayoutStyle}"  >
+                <Grid Style="{StaticResource GridStyle}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="5"/>
+                    </Grid.RowDefinitions>
+
+                    <ic:CircleImage x:Name="image" Source="user.jpg" Grid.Row="0" Grid.Column="0"  HorizontalOptions="Start" />
+                    <flv:FlowListView FlowColumnCount="2" Grid.Row="0" Grid.Column="1"
+                            SeparatorVisibility="Default"   
+                            HasUnevenRows="True" >  
+
+                        <flv:FlowListView.FlowColumnTemplate>
+                            <DataTemplate>
+                                
+                                <Frame BackgroundColor="#cf453c"  
+                                Margin="5">
+                                  
+                                <Label HorizontalOptions="Fill"   
+                                    VerticalOptions="Fill"   
+                                    TextColor="#cf453c"  
+                                    XAlign="End"  
+                                    YAlign="End"   
+                                    Text="Nickname: TEST"
+                                    Style="{StaticResource LabelMenu }"/>
+                                    
+                                </Frame>
+                            </DataTemplate>
+                        </flv:FlowListView.FlowColumnTemplate>
+                    </flv:FlowListView>
+                    <views:RatingStars Grid.Row="1" Grid.ColumnSpan="2"/>
+                    <Picker x:Name="lsttomaservicio" Title="Notificación" Grid.Row="2" Grid.ColumnSpan="2">
+                        <Picker.Items>
+                            <x:String>Llego a tu ubicación en 30 minutos. (Se carga tarifa de transporte por un valor de 6 USD)</x:String>
+                            <x:String>Llego a tu ubicación en 60 minutos. (Se carga tarifa de transporte por un valor de 12 USD)</x:String>
+                            <x:String>Llego a tu ubicación en 90 minutos. (Se carga tarifa de transporte por un valor de 18 USD)</x:String>
+                        </Picker.Items>
+                    </Picker>
+                    <ic:CircleImage 
+                    VerticalOptions="Center"
+                    
+                     x:Name="activo" Grid.Row="3"  Grid.ColumnSpan="2" HeightRequest="100" WidthRequest="100" Source="launcher_foreground.png">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnClickActivo" />
+                        </Image.GestureRecognizers>
+                    </ic:CircleImage>
+                    <BoxView x:Name="status" HeightRequest="5" Grid.Row="4"  Grid.ColumnSpan="2"   Color="Red"></BoxView>
+
+
+                </Grid>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

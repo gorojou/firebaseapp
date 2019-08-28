@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              xmlns:messier16="clr-namespace:Messier16.Forms.Controls;assembly=Messier16.Forms.Controls"
+             mc:Ignorable="d"
+             xmlns:custom="clr-namespace:Beux.Controls"
+             x:Class="Beux.Views.EvaluarPage" BackgroundColor="#fff5ed">
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource StackLayoutStyle}" >
+            <Grid Style="{StaticResource GridStyle}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <messier16:RatingBar Rating="{Binding Rating, Mode=TwoWay}" Grid.Column="1"  Grid.Row="0" FillColor="#2c1830" FilledImage="star_filled.png" Image="star.png" MaxRating="5" HeightRequest="50" />
+                <Label Text="Trato" Style="{StaticResource LabelStyle}" Grid.Column="0" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"></Label>
+                <messier16:RatingBar Rating="{Binding Rating, Mode=TwoWay}" Grid.Column="1"  Grid.Row="1" FillColor="#2c1830" FilledImage="star_filled.png" Image="star.png" MaxRating="5" HeightRequest="50" />
+                <Label Text="Respeto" Style="{StaticResource LabelStyle}" Grid.Column="0" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"></Label>
+                <messier16:RatingBar Rating="{Binding Rating, Mode=TwoWay}" Grid.Column="1"  Grid.Row="2" FillColor="#2c1830" FilledImage="star_filled.png" Image="star.png" MaxRating="5" HeightRequest="50" />
+                <Label Text="Hígiene" Style="{StaticResource LabelStyle}" Grid.Column="0" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"></Label>
+                <messier16:RatingBar Rating="{Binding Rating, Mode=TwoWay}" Grid.Column="1"  Grid.Row="3" FillColor="#2c1830" FilledImage="star_filled.png" Image="star.png" MaxRating="5" HeightRequest="50" />
+                <Label Text="Propina" Style="{StaticResource LabelStyle}" Grid.Column="0" Grid.Row="3" VerticalOptions="Center" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"></Label>
+                <custom:CustomEntry x:Name="comentarios" Grid.Row="6" Grid.ColumnSpan="2" Style="{StaticResource EntryStyle}" Placeholder="Comentarios" Keyboard="Plain">
+                </custom:CustomEntry>
+                <Button x:Name="evaluar" Grid.Row="7" Grid.ColumnSpan="2" Style="{StaticResource ButtonActStyle}" Text="Evaluar"  Clicked="OnEvaluarClicked" />
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

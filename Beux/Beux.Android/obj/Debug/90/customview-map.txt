@@ -1,0 +1,99 @@
+@string/appbar_scrolling_view_behavior;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\layout\flyoutcontent.xml
+@string/appbar_scrolling_view_behavior;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\layout\rootlayout.xml
+@string/appbar_scrolling_view_behavior;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\layout\shellcontent.xml
+adaptive-icon;obj\Debug\90\res\mipmap-anydpi-v26\icon.xml
+adaptive-icon;obj\Debug\90\res\mipmap-anydpi-v26\icon_round.xml
+alpha;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\anim\enterfromleft.xml
+alpha;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\anim\exittoleft.xml
+android.support.design.widget.AppBarLayout;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\layout\flyoutcontent.xml
+android.support.design.widget.AppBarLayout;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\layout\rootlayout.xml
+android.support.design.widget.AppBarLayout;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\layout\shellcontent.xml
+android.support.design.widget.BottomNavigationView;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\layout\bottomtablayout.xml
+android.support.design.widget.CoordinatorLayout;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\layout\flyoutcontent.xml
+android.support.design.widget.CoordinatorLayout;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\layout\rootlayout.xml
+android.support.design.widget.CoordinatorLayout;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\layout\shellcontent.xml
+android.support.design.widget.TabLayout;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\layout\rootlayout.xml
+android.support.design.widget.TabLayout;obj\Debug\90\res\layout\tabbar.xml
+android.support.v4.widget.NestedScrollView;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\layout\rootlayout.xml
+android.support.v4.widget.NestedScrollView;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\layout\shellcontent.xml
+android.support.v7.widget.RecyclerView;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\layout\flyoutcontent.xml
+android.support.v7.widget.Toolbar;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\layout\rootlayout.xml
+android.support.v7.widget.Toolbar;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\layout\shellcontent.xml
+android.support.v7.widget.Toolbar;obj\Debug\90\res\layout\toolbar.xml
+androidhud.ProgressWheel;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\layout\loadingprogress.xml
+attr;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\values\attrs.xml
+attr;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\values\attrs.xml
+background;obj\Debug\90\res\mipmap-anydpi-v26\icon.xml
+background;obj\Debug\90\res\mipmap-anydpi-v26\icon_round.xml
+cache-path;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\65\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+color;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\values\colors.xml
+color;obj\Debug\90\res\values\colors.xml
+corners;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\drawable\roundedbg.xml
+corners;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\drawable\roundedbgdark.xml
+corners;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\drawable\segmented_control_first_background.xml
+corners;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\drawable\segmented_control_last_background.xml
+declare-styleable;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\values\attrs.xml
+declare-styleable;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\values\attrs.xml
+dimen;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\values\dimens.xml
+external-cache-path;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\65\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-files-path;obj\Debug\90\res\xml\file_paths.xml
+external-path;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\65\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+foreground;obj\Debug\90\res\mipmap-anydpi-v26\icon.xml
+foreground;obj\Debug\90\res\mipmap-anydpi-v26\icon_round.xml
+FrameLayout;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\layout\bottomtablayout.xml
+gradient;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\drawable\roundedbg.xml
+gradient;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\drawable\roundedbgdark.xml
+ImageView;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\layout\loadingimage.xml
+item;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\drawable\segmented_control_background.xml
+item;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\drawable\segmented_control_first_background.xml
+item;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\drawable\segmented_control_last_background.xml
+item;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\values\styles.xml
+item;obj\Debug\90\res\values\styles.xml
+LinearLayout;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\layout\loading.xml
+LinearLayout;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\layout\loadingimage.xml
+LinearLayout;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\layout\loadingprogress.xml
+LinearLayout;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\layout\bottomtablayout.xml
+Messier16.Forms.Android.Controls.Native.SegmentedControl.SegmentedControlButton;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\layout\segmentedcontrol.xml
+paths;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\65\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+paths;obj\Debug\90\res\xml\file_paths.xml
+ProgressBar;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\layout\loading.xml
+resources;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\googsvcsjson\values\goog_svcs_json.xml
+resources;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\values\attrs.xml
+resources;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\values\strings.xml
+resources;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\values\attrs.xml
+resources;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\values\colors.xml
+resources;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\values\dimens.xml
+resources;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\values\strings.xml
+resources;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\values\styles.xml
+resources;obj\Debug\90\res\values\colors.xml
+resources;obj\Debug\90\res\values\styles.xml
+selector;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\drawable\segmented_control_background.xml
+selector;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\drawable\segmented_control_first_background.xml
+selector;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\drawable\segmented_control_last_background.xml
+set;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\anim\enterfromleft.xml
+set;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\anim\enterfromright.xml
+set;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\anim\exittoleft.xml
+set;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\anim\exittoright.xml
+shape;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\drawable\roundedbg.xml
+shape;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\drawable\roundedbgdark.xml
+shape;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\drawable\segmented_control_background.xml
+shape;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\drawable\segmented_control_first_background.xml
+shape;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\drawable\segmented_control_last_background.xml
+solid;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\drawable\segmented_control_background.xml
+solid;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\drawable\segmented_control_first_background.xml
+solid;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\drawable\segmented_control_last_background.xml
+string;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\googsvcsjson\values\goog_svcs_json.xml
+string;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\values\strings.xml
+string;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\values\strings.xml
+stroke;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\drawable\segmented_control_background.xml
+stroke;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\drawable\segmented_control_first_background.xml
+stroke;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\drawable\segmented_control_last_background.xml
+style;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\9\jl\res\values\styles.xml
+style;obj\Debug\90\res\values\styles.xml
+TextView;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\layout\loading.xml
+TextView;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\layout\loadingimage.xml
+TextView;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\1\jl\res\layout\loadingprogress.xml
+translate;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\anim\enterfromleft.xml
+translate;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\anim\enterfromright.xml
+translate;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\anim\exittoleft.xml
+translate;C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Debug\90\lp\77\jl\res\anim\exittoright.xml

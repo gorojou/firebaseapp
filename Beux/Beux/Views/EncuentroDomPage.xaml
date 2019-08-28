@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:views="clr-namespace:Beux.Views"
+             x:Class="Beux.Views.EncuentroDomPage" BackgroundColor="#fff5ed">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Chatea y Encuentrate!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" Style="{StaticResource LabelStyle}" />
+            <Grid Style="{StaticResource GridStyle}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+
+                </Grid.RowDefinitions>
+                <Button x:Name="chat" Grid.Row="3" Style="{StaticResource ButtonStyle}" Text="Iniciar Chat"   Clicked="OnChatClicked"  />
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

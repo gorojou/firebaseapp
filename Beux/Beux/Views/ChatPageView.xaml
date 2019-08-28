@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Beux.Views.ChatPageView" BackgroundColor="#fff5ed">
+    <ContentView.Content>
+       
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+
+                <ListView Grid.Row="0" ItemsSource="{Binding .}" x:Name="_lstChat"
+				SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+
+                            <TextCell Text="{Binding UserName}" Detail="{Binding UserMessage}" DetailColor="#fff5ed"/>
+
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <Grid Grid.Row="1" RowSpacing="5">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <Entry Placeholder="Escribe el Mensaje .." Grid.Column="0" x:Name="_etMessage"/>
+                    <Button Text="Enviar!" Style="{StaticResource ButtonActStyleMin}"  Grid.Column="1" Clicked="Handle_Clicked"/>
+                </Grid>
+
+
+            </Grid>
+    
+    </ContentView.Content>
+</ContentView>

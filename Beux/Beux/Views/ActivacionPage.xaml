@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             
+             x:Class="Beux.Views.ActivacionPage" BackgroundColor="#fff5ed">
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource StackLayoutStyle}"  >
+            <Grid Style="{StaticResource GridStyle}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="5"/>
+
+                </Grid.RowDefinitions>
+                <Picker x:Name="lstpreferencias" Title="Preferencia" Grid.Row="0">
+                    <Picker.Items>
+                        <x:String>A domicilio</x:String>
+                        <x:String>En Domicilio</x:String>
+                        <x:String>Cualquiera de las dos</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="valor" Grid.Row="2"  Style="{StaticResource EntryStyle}" Placeholder="Valor/Hora" Keyboard="Numeric"/>
+                <ic:CircleImage 
+                    VerticalOptions="Center"
+                    
+                     x:Name="activo" Grid.Row="3"  HeightRequest="100" WidthRequest="100" Source="launcher_foreground.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnClickActivo" />
+                    </Image.GestureRecognizers>
+                </ic:CircleImage>
+                <BoxView x:Name="status" HeightRequest="5"  Grid.Row="4"  Color="Red"></BoxView>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

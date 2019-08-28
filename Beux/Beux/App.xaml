@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             xmlns:custom="clr-namespace:Beux.Controls"
+             mc:Ignorable="d"
+             x:Class="Beux.App">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--Global Styles-->
+            <Color x:Key="NavigationPrimary">#cf453c</Color>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <Setter Property="BarTextColor" Value="White" />
+            </Style>
+            <Style TargetType="StackLayout" x:Key="StackLayoutStyle">
+                <Setter Property="Orientation" Value="Vertical"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="Spacing" Value="0"/>
+            </Style>
+            <Style TargetType="ScrollView" x:Key="ScrollViewStyle">
+                <Setter Property="Orientation" Value="Vertical"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+            </Style>
+            <Style TargetType="custom:CustomEntry" x:Key="EntryStyle">
+                <Setter Property="FontFamily">
+                    <OnPlatform x:TypeArguments="x:String">
+                        <OnPlatform.iOS>Sansation_Italic.ttf</OnPlatform.iOS>
+                        <OnPlatform.Android>Sansation_Italic.ttf#Sansation_Italic</OnPlatform.Android>
+                    </OnPlatform>
+                </Setter>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="WidthRequest" Value="1000"/>
+                <Setter Property="TextColor" Value="#cf453c"/>
+                <Setter Property="BorderColor" Value="Red"/>
+                <Setter Property="CornerRadius" Value="18"/>
+                <Setter Property="IsCurvedCornersEnabled" Value="True"/>
+                <Setter Property="PlaceholderColor" Value="#2c1830"/>
+                <Setter Property="Margin" Value="0,-128,0,0"/>
+            </Style>
+            <!--<Style TargetType="DatePicker" x:Key="DatePickerStyle">
+        <Setter Property="BackgroundColor" Value="#FFFFFF"/>
+        <Setter Property="HorizontalOptions" Value="Center"/>
+        <Setter Property="VerticalOptions" Value="Center"/>
+        <Setter Property="WidthRequest" Value="1000"/>
+        <Setter Property="TextColor" Value="#000000"/>
+        <Setter Property="Margin" Value="0,-128,0,0"/>
+      </Style>-->
+            <Style TargetType="Button" x:Key="ButtonStyle">
+                <Setter Property="FontFamily">
+                    <OnPlatform x:TypeArguments="x:String">
+                        <OnPlatform.iOS>Sansation_Italic.ttf</OnPlatform.iOS>
+                        <OnPlatform.Android>Sansation_Italic.ttf#Sansation_Italic</OnPlatform.Android>
+                    </OnPlatform>
+                </Setter>
+                <Setter Property="BackgroundColor" Value="#f5dac4"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="WidthRequest" Value="1000"/>
+                <Setter Property="TextColor" Value="#000000"/>
+                <Setter Property="Margin" Value="0,-128,0,0"/>
+                <Setter Property="BorderRadius" Value="30"/>
+                <Setter Property="BorderColor" Value="Transparent"/>
+                <Setter Property="TextColor" Value="#FFFFFF"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style TargetType="Button" x:Key="ButtonActStyle">
+                <Setter Property="FontFamily">
+                    <OnPlatform x:TypeArguments="x:String">
+                        <OnPlatform.iOS>Sansation_Italic.ttf</OnPlatform.iOS>
+                        <OnPlatform.Android>Sansation_Italic.ttf#Sansation_Italic</OnPlatform.Android>
+                    </OnPlatform>
+                </Setter>
+                <Setter Property="BackgroundColor" Value="#cf453c"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="WidthRequest" Value="1000"/>
+                <Setter Property="TextColor" Value="#000000"/>
+                <Setter Property="Margin" Value="0,-128,0,0"/>
+                <Setter Property="BorderRadius" Value="30"/>
+                <Setter Property="BorderColor" Value="Transparent"/>
+                <Setter Property="TextColor" Value="#FFFFFF"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style TargetType="Button" x:Key="ButtonActStyleMin">
+                <Setter Property="FontFamily">
+                    <OnPlatform x:TypeArguments="x:String">
+                        <OnPlatform.iOS>Sansation_Italic.ttf</OnPlatform.iOS>
+                        <OnPlatform.Android>Sansation_Italic.ttf#Sansation_Italic</OnPlatform.Android>
+                    </OnPlatform>
+                </Setter>
+                <Setter Property="BackgroundColor" Value="#cf453c"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="WidthRequest" Value="80"/>
+                <Setter Property="WidthRequest" Value="80"/>
+                <Setter Property="TextColor" Value="#000000"/>
+                <Setter Property="Margin" Value="0,20,20,0"/>
+                <Setter Property="BorderRadius" Value="30"/>
+                <Setter Property="BorderColor" Value="Transparent"/>
+                <Setter Property="TextColor" Value="#FFFFFF"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style TargetType="Button" x:Key="BtnFlatStyle">
+                <Setter Property="BackgroundColor" Value="#2c1830"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="WidthRequest" Value="1000"/>
+                <Setter Property="TextColor" Value="#000000"/>
+                <Setter Property="Margin" Value="0,-128,0,0"/>
+                <Setter Property="BorderRadius" Value="0"/>
+                <Setter Property="BorderColor" Value="Transparent"/>
+                <Setter Property="TextColor" Value="#FFFFFF"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style TargetType="Grid" x:Key="GridStyle">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Padding" Value="20"/>
+            </Style>
+            <Style TargetType="Grid" x:Key="GridMenuStyle">
+                <Setter Property="Padding" Value="0"/>
+            </Style>
+            <Style TargetType="Button" x:Key="LinkStyle">
+                <Setter Property="TextColor" Value="#000000"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="BorderWidth" Value="0"/>
+                <Setter Property="BorderColor" Value="Transparent" />
+            </Style>
+            <Style TargetType="Button" x:Key="LinkStyleFrame">
+                <Setter Property="TextColor" Value="#FFFFFF"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="BorderWidth" Value="0"/>
+                <Setter Property="BorderColor" Value="Transparent" />
+            </Style>
+            <Style TargetType="Label" x:Key="PuntosStyle">
+                <Setter Property="TextColor" Value="#2c1830"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="End"/>
+                <Setter Property="FontSize" Value="64" />
+                <Setter Property="WidthRequest" Value="128" />
+                <Setter Property="HeightRequest" Value="80" />
+            </Style>
+            <Style TargetType="Label" x:Key="LabelNotificacion">
+                <Setter Property="TextColor" Value="#cf453c"/>
+                <Setter Property="FontAttributes" Value="Italic"/>
+                <Setter Property="HorizontalTextAlignment" Value="Start"/>
+                <Setter Property="VerticalTextAlignment" Value="End"/>
+                <Setter Property="HorizontalOptions" Value="End"/>
+                <Setter Property="FontSize" Value="11" />
+            </Style>
+            <Style TargetType="Label" x:Key="LabelMenu">
+                <Setter Property="FontFamily">
+                    <OnPlatform x:TypeArguments="x:String">
+                        <OnPlatform.iOS>Sansation_Italic.ttf</OnPlatform.iOS>
+                        <OnPlatform.Android>Sansation_Italic.ttf#Sansation_Italic</OnPlatform.Android>
+                    </OnPlatform>
+                </Setter>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="End"/>
+                <Setter Property="FontSize" Value="Medium" />
+               
+            </Style>
+            <Style TargetType="ic:CircleImage" x:Key="ProfilePhoto">
+                <Setter Property="HeightRequest" Value="64"/>
+                <Setter Property="WidthRequest" Value="64"/>
+                <Setter Property="Aspect" Value="AspectFill"/>
+                <Setter Property="BorderColor" Value="White"/>
+                <Setter Property="BorderThickness" Value="3"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+            <!-- <Style TargetType="local:RoundedButton" x:Key="RoundedButtonStyle">
+                <Setter Property="BackgroundColor" Value="#000000" />
+                <Setter Property="TextColor" Value="#FFFFFF" />
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="WidthRequest" Value="48" />
+                <Setter Property="HeightRequest" Value="48" />
+                <Setter Property="FontSize" Value="18" />
+            </Style> -->
+            <Style TargetType="StackLayout" x:Key="SLContentStyle">
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+            </Style>
+            <Style TargetType="StackLayout" x:Key="SLFooterStyle">
+                <Setter Property="HorizontalOptions" Value="EndAndExpand" />
+                <Setter Property="VerticalOptions" Value="EndAndExpand" />
+            </Style>
+            <Style TargetType="Label" x:Key="OpcionesTextStyle">
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="#000000"/>
+                <Setter Property="Opacity" Value="0"/>
+            </Style>
+            <Style TargetType="Label" x:Key="LabelStyle">
+                <Setter Property="FontFamily">
+                    <OnPlatform x:TypeArguments="x:String">
+                        <OnPlatform.iOS>Sansation_Italic.ttf</OnPlatform.iOS>
+                        <OnPlatform.Android>Sansation_Italic.ttf#Sansation_Italic</OnPlatform.Android>
+                    </OnPlatform>
+                </Setter>
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="#2c1830"/>
+                <Setter Property="Opacity" Value="1"/>
+            </Style>
+            <Style TargetType="Label" x:Key="LabelStyleTermConds">
+                <Setter Property="FontSize" Value="Micro" />
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="BlueViolet"/>
+                <Setter Property="Opacity" Value="1"/>
+            </Style>
+            <Style TargetType="RelativeLayout" x:Key="HeaderStyle">
+                <Setter Property="VerticalOptions" Value="Start"/>
+                <Setter Property="HeightRequest" Value="64"/>
+            </Style>
+            <Style TargetType="RelativeLayout" x:Key="FooterStyle">
+                <Setter Property="VerticalOptions" Value="End"/>
+                <Setter Property="BackgroundColor" Value="#f5dac4"/>
+                <Setter Property="HeightRequest" Value="64"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+    
+</Application>

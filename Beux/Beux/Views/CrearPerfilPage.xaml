@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+             xmlns:controls="clr-namespace:Beux.Controls"
+             xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             
+             x:Class="Beux.Views.CrearPerfilPage" BackgroundColor="#fff5ed">
+    <ContentPage.Content>
+        <ScrollView Style="{StaticResource ScrollViewStyle}">
+            <StackLayout Style="{StaticResource StackLayoutStyle}"  >
+                <Grid Style="{StaticResource GridStyle}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="170"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Image x:Name="logo" Source="launcher_foreground.png" Grid.Row="0" Grid.ColumnSpan="3" WidthRequest="150" HeightRequest="150" HorizontalOptions="CenterAndExpand" Margin="20,0,0,0" />
+                    <Image x:Name="manimg" Source="man.png" Grid.Row="1" Grid.Column="0" WidthRequest="40" HeightRequest="40" HorizontalOptions="CenterAndExpand" Margin="0,0,20,0" />
+                    <controls:CheckBox Grid.Row="2" Grid.Column="0" x:Name="man" Text="Hombre"  IsChecked="{Binding YourProperty}" Type="Check" Color="#cf453c" />
+                    <Image x:Name="womanimg" Source="woman.png" Grid.Row="1" Grid.Column="1" WidthRequest="40" HeightRequest="40" HorizontalOptions="CenterAndExpand" Margin="0,0,20,0"  />
+                    <controls:CheckBox Grid.Row="2" Grid.Column="1" x:Name="woman" Text="Mujer"  IsChecked="{Binding YourProperty}" Type="Check" Color="#cf453c" />
+                    <Image x:Name="noneimg" Source="none.png" Grid.Row="1" Grid.Column="2" WidthRequest="40" HeightRequest="40" HorizontalOptions="CenterAndExpand" Margin="0,0,20,0"  />
+                    <controls:CheckBox Grid.Row="2" Grid.Column="2" x:Name="none" Text="Otro"  IsChecked="{Binding YourProperty}" Type="Check" Color="#cf453c" />
+                    <Label x:Name="anexarlbl" Grid.Row="3" Grid.Column="0"  Text="Anexar Fotografías" TextColor="#cf453c"  Style="{StaticResource LabelStyle}" Margin="3,3,3,3" VerticalOptions="CenterAndExpand"   />
+                    <ic:CircleImage 
+                    VerticalOptions="Center"
+                    
+                    x:Name="takePhoto" Grid.Row="3" Grid.Column="1"  HeightRequest="25" WidthRequest="25" Source="camara.png">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnclickTakePhoto" />
+                        </Image.GestureRecognizers>
+                    </ic:CircleImage>
+                    <ic:CircleImage 
+                    VerticalOptions="Center"
+                    
+                     x:Name="pickPhoto" Grid.Row="3" Grid.Column="2"  HeightRequest="25" WidthRequest="25" Source="carpeta.png">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnclickPickPhoto" />
+                        </Image.GestureRecognizers>
+                    </ic:CircleImage>
+               <flv:FlowListView FlowColumnCount="3" Grid.Row="4" Grid.ColumnSpan="3"
+                SeparatorVisibility="Default"   
+                HasUnevenRows="True"  
+                FlowItemTappedCommand="{Binding ItemTappedCommand}"   
+                FlowItemsSource="{Binding Items}">
+
+                        <flv:FlowListView.FlowColumnTemplate>
+                            <DataTemplate>
+                                <Frame BackgroundColor="#cf453c"  
+                Margin="5">
+                                    <Label HorizontalOptions="Fill"   
+                    VerticalOptions="Fill"   
+                    TextColor="White"  
+                    XAlign="Center"  
+                    YAlign="Center"   
+                    Text="{Binding }"/>
+                                </Frame>
+                            </DataTemplate>
+                        </flv:FlowListView.FlowColumnTemplate>
+                    </flv:FlowListView>
+                    <Label x:Name="messageLabel" Grid.Row="7" Grid.ColumnSpan="3" Text="No apareceran fotos sin permiso del administrador"   Style="{StaticResource LabelNotificacion}" Margin="3,3,3,3" VerticalOptions="CenterAndExpand"   />
+
+                    <Button x:Name="signIn" Grid.Row="7" Grid.ColumnSpan="3" Style="{StaticResource ButtonActStyle}" Text="Crear Perfil" Clicked="OnCrearPerfilClick" />
+                </Grid>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

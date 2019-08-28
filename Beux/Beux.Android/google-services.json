@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1023103999455",
+    "firebase_url": "https://upick-app-c921d.firebaseio.com",
+    "project_id": "upick-app-c921d",
+    "storage_bucket": "upick-app-c921d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023103999455:android:923cbd705ff3e282",
+        "android_client_info": {
+          "package_name": "com.companyname.Beux"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023103999455-8sf4lt985m9607kug91v3nmkkv6ks11e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj2ugnc7DjmmPiqtgiMY20_rOWiF807MA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023103999455-8sf4lt985m9607kug91v3nmkkv6ks11e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
