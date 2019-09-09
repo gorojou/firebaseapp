@@ -41,8 +41,8 @@
 
                         </Picker.Items>
                     </Picker>
-                    <Entry x:Name="password" Grid.Row="5" Grid.ColumnSpan="3"  Style="{StaticResource EntryStyle}" Placeholder="Contraseña" IsPassword="True" Text="{Binding Password}"/>
-                    <Entry x:Name="passwordconf" Grid.Row="6" Grid.ColumnSpan="3"  Style="{StaticResource EntryStyle}" Placeholder="Confirmar contraseña" IsPassword="True"/>
+                    <Entry x:Name="password" Grid.Row="5" Grid.ColumnSpan="3"  Style="{StaticResource EntryStyle}" Placeholder="Contraseña" IsPassword="True" Text="{Binding Password}" MaxLength="6" />
+                    <Entry x:Name="passwordconf" Grid.Row="6" Grid.ColumnSpan="3"  Style="{StaticResource EntryStyle}" Placeholder="Confirmar contraseña" IsPassword="True" MaxLength="6" />
 
                     
 

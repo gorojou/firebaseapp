@@ -8204,7 +8204,10 @@ namespace Beux.Droid
 			public const int design_snackbar_background = 2130837617;
 			
 			// aapt resource value: 0x7F010005
-			public const int glogin = 2130771973;
+			public const int fondobeux = 2130771973;
+			
+			// aapt resource value: 0x7F010006
+			public const int glogin = 2130771974;
 			
 			// aapt resource value: 0x7F020073
 			public const int googleg_disabled_color_18 = 2130837619;
@@ -8758,11 +8761,11 @@ namespace Beux.Droid
 			// aapt resource value: 0x7F02012A
 			public const int ic_vol_type_tv_light = 2130837802;
 			
-			// aapt resource value: 0x7F010006
-			public const int launcher_foreground = 2130771974;
-			
 			// aapt resource value: 0x7F010007
-			public const int man = 2130771975;
+			public const int launcher_foreground = 2130771975;
+			
+			// aapt resource value: 0x7F010008
+			public const int man = 2130771976;
 			
 			// aapt resource value: 0x7F02012D
 			public const int mr_button_connected_dark = 2130837805;
@@ -8833,8 +8836,8 @@ namespace Beux.Droid
 			// aapt resource value: 0x7F020143
 			public const int navigation_empty_icon = 2130837827;
 			
-			// aapt resource value: 0x7F010008
-			public const int none = 2130771976;
+			// aapt resource value: 0x7F010009
+			public const int none = 2130771977;
 			
 			// aapt resource value: 0x7F020145
 			public const int notification_action_background = 2130837829;
@@ -8872,14 +8875,14 @@ namespace Beux.Droid
 			// aapt resource value: 0x7F02014E
 			public const int notify_panel_notification_icon_bg = 2130837838;
 			
-			// aapt resource value: 0x7F010009
-			public const int rating_star_half = 2130771977;
-			
 			// aapt resource value: 0x7F010010
-			public const int rating_star_off = 2130771984;
+			public const int rating_star_half = 2130771984;
 			
 			// aapt resource value: 0x7F010011
-			public const int rating_star_on = 2130771985;
+			public const int rating_star_off = 2130771985;
+			
+			// aapt resource value: 0x7F010012
+			public const int rating_star_on = 2130771986;
 			
 			// aapt resource value: 0x7F020152
 			public const int roundedbg = 2130837842;
@@ -8902,14 +8905,14 @@ namespace Beux.Droid
 			// aapt resource value: 0x7F020158
 			public const int tooltip_frame_light = 2130837848;
 			
-			// aapt resource value: 0x7F010012
-			public const int user = 2130771986;
-			
 			// aapt resource value: 0x7F010013
-			public const int woman = 2130771987;
+			public const int user = 2130771987;
 			
 			// aapt resource value: 0x7F010014
-			public const int xamarin_logo = 2130771988;
+			public const int woman = 2130771988;
+			
+			// aapt resource value: 0x7F010015
+			public const int xamarin_logo = 2130771989;
 			
 			static Drawable()
 			{

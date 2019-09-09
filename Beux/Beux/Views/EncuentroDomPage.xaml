@@ -16,7 +16,7 @@
                     <RowDefinition Height="50"/>
 
                 </Grid.RowDefinitions>
-                <Button x:Name="chat" Grid.Row="3" Style="{StaticResource ButtonStyle}" Text="Iniciar Chat"   Clicked="OnChatClicked"  />
+                <Button x:Name="chat" Grid.Row="3" Style="{StaticResource ButtonActStyle}" Text="Iniciar Chat"   Clicked="OnChatClicked"  />
 
             </Grid>
         </StackLayout>

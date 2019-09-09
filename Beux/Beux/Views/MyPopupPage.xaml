@@ -8,7 +8,7 @@
 
     <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
         <Entry  x:Name="_username" Placeholder="Usuiario"/>
-        <Button Text="Ingresar !" Clicked="Handle_Clicked" Style="{StaticResource ButtonStyle}"/>
+        <Button Text="Ingresar!" Clicked="Handle_Clicked" />
     </StackLayout>
 
 

@@ -21,7 +21,7 @@ namespace Beux.Views
         async void Handle_Clicked(object sender, System.EventArgs e)
         {
             var db = new DBFire();
-            await db.saveRoom(new Room() { Name = _rootName.Text });
+            await db.saveRoom(new Room() { Name = _rootName.Text});
             await Navigation.PopAsync();
 
         }

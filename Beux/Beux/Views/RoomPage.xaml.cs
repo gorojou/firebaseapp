@@ -16,16 +16,23 @@ namespace Beux.Views
     public partial class RoomPage : ContentPage
     {
         DBFire db = new DBFire();
-
-        IUserDialogs Dialogs = UserDialogs.Instance;
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            var list = await db.getRoomList();
+            _lstx.BindingContext = list;
+        }
 
         public RoomPage()
         {
             InitializeComponent();
-            var list =  db.getRoomList().Result;
-            _lstx.BindingContext = list;
 
-          
+
+            Device.BeginInvokeOnMainThread(() =>
+            {
+
+                Navigation.PushPopupAsync(new MyPopupPage());
+            });
         }
 
         async void Handle_Refreshing(object sender, System.EventArgs e)
@@ -36,17 +43,15 @@ namespace Beux.Views
 
         void Info_Clicked(object sender, System.EventArgs e)
         {
-            Dialogs.Alert("Usuario Activo", User.UserName, "Okey");
+            DisplayAlert("Usuario Actual", User.UserName, "Okey");
         }
 
-        public void Plus_Clicked(object sender, System.EventArgs e)
+        void Plus_Clicked(object sender, System.EventArgs e)
         {
-           // AddRoomPage myHomePage = new AddRoomPage();
-            //NavigationPage.SetHasNavigationBar(myHomePage, false);
-             //Navigation.PushModalAsync(myHomePage);
             Navigation.PushAsync(new AddRoomPage());
 
         }
+
         void Handle_ItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
         {
 
@@ -65,6 +70,5 @@ namespace Beux.Views
             }
 
         }
-    
     }
 }

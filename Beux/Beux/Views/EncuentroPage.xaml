@@ -19,7 +19,8 @@
 
                     
                     <views:MapPage  Grid.Row="0" Grid.ColumnSpan="2"/>
-                    <views:RoomPage  Grid.Row="2" Grid.ColumnSpan="2"/>
+                    <Button x:Name="chat" Grid.Row="3" Grid.ColumnSpan="2" Style="{StaticResource ButtonActStyle}" Text="Iniciar Chat"   Clicked="OnChatClicked"  />
+
 
                 </Grid>
 

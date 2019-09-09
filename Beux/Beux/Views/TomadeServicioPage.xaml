@@ -22,30 +22,43 @@
                         <RowDefinition Height="5"/>
                     </Grid.RowDefinitions>
 
-                    <ic:CircleImage x:Name="image" Source="user.jpg" Grid.Row="0" Grid.Column="0"  HorizontalOptions="Start" />
-                    <flv:FlowListView FlowColumnCount="2" Grid.Row="0" Grid.Column="1"
-                            SeparatorVisibility="Default"   
-                            HasUnevenRows="True" >  
 
-                        <flv:FlowListView.FlowColumnTemplate>
+
+                    <ListView x:Name="Lista"  ItemSelected="EvetClicked" Grid.ColumnSpan="2" SeparatorColor="#63191B" HasUnevenRows="True">
+                        <ListView.ItemTemplate>
                             <DataTemplate>
-                                
-                                <Frame BackgroundColor="#cf453c"  
-                                Margin="5">
-                                  
-                                <Label HorizontalOptions="Fill"   
-                                    VerticalOptions="Fill"   
-                                    TextColor="#cf453c"  
-                                    XAlign="End"  
-                                    YAlign="End"   
-                                    Text="Nickname: TEST"
-                                    Style="{StaticResource LabelMenu }"/>
-                                    
-                                </Frame>
+                                <ViewCell>
+
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+
+                                            <RowDefinition Height="30"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="50"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+
+                                            <ColumnDefinition Width="200"/>
+                                            <ColumnDefinition Width="200"/>
+
+                                        </Grid.ColumnDefinitions>
+                                        <ic:CircleImage x:Name="image" Source="user.jpg" Grid.RowSpan="3" Grid.Row="0" Grid.Column="0" Aspect="AspectFill" Margin="5,5,5,5" HeightRequest="30" WidthRequest="30" />
+
+                                        <Label Text="{Binding Nickname}"  Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" Margin="5,10,10,5"  TextColor="#B00000"  />
+                                        <Label Text="{Binding Genero}" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center"  Margin="5,10,10,5" FontSize="Small" TextColor="Black"/>
+                                        <Label Text="{Binding ValorHora}" Grid.Row="2" Grid.Column="1" HorizontalOptions="Center"  Margin="5,10,10,5" FontSize="Small" TextColor="Black"/>
+                                        <Label Text="{Binding TipoCita}" Grid.Row="3" Grid.Column="1" HorizontalOptions="Center"  Margin="5,10,10,5" FontSize="Small" TextColor="Black"/>
+                                        <views:RatingStars Grid.Row="4" VerticalOptions="Center" Grid.Column="0" Grid.ColumnSpan="3"  />
+                                    </Grid>
+                                </ViewCell>
+
                             </DataTemplate>
-                        </flv:FlowListView.FlowColumnTemplate>
-                    </flv:FlowListView>
-                    <views:RatingStars Grid.Row="1" Grid.ColumnSpan="2"/>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
                     <Picker x:Name="lsttomaservicio" Title="Notificación" Grid.Row="2" Grid.ColumnSpan="2">
                         <Picker.Items>
                             <x:String>Llego a tu ubicación en 30 minutos. (Se carga tarifa de transporte por un valor de 6 USD)</x:String>

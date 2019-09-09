@@ -24,9 +24,9 @@
                 </Grid.RowDefinitions>
                
                 <Image x:Name="logo" Source="launcher_foreground.png" Grid.Row="0" WidthRequest="150" HeightRequest="150" HorizontalOptions="CenterAndExpand" Margin="20,0,0,0" />
-                <custom:CustomEntry x:Name="nickname" Grid.Row="1" Style="{StaticResource EntryStyle}" Placeholder="Nickname" Text="{Binding Username}">
+                <custom:CustomEntry x:Name="nickname" Grid.Row="1" Style="{StaticResource EntryStyle}" Placeholder="Nickname" Text="{Binding Username}" Keyboard="Email">
                 </custom:CustomEntry>
-                <custom:CustomEntry x:Name="password" Grid.Row="2" Style="{StaticResource EntryStyle}" Placeholder="Contraseña" IsPassword="True" Text="{Binding Password}"/>
+                <custom:CustomEntry x:Name="password" Grid.Row="2" Style="{StaticResource EntryStyle}" Placeholder="Contraseña" IsPassword="True" Text="{Binding Password}" MaxLength="6"/>
                 <Button x:Name="logIn" Grid.Row="3" Style="{StaticResource ButtonStyle}" Text="Iniciar Sesión"   Command="{Binding LoginCommand}"  />
 
                 <Button x:Name="signIn" Grid.Row="4" Style="{StaticResource ButtonActStyle}" Text="REGISTRARSE AHORA" Command="{Binding SignUpCommand}" />

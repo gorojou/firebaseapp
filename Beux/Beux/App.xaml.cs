@@ -15,8 +15,9 @@ namespace Beux
 
             DependencyService.Register<MockDataStore>();
             // MainPage = new MainPage();
-            Current.MainPage = new LoginPage();
-           // MainPage = new LoginPage();
+           
+            
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()

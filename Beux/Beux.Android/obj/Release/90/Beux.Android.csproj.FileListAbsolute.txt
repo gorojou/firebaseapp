@@ -666,3 +666,4 @@ C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Release\90\li
 C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Release\90\android\assets\Plugin.Geolocator.dll
 C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Release\90\android\src\md56aabda7acd4abaa2b1d1169cd8c7c6ee\GeolocationContinuousListener.java
 C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Release\90\android\src\md56aabda7acd4abaa2b1d1169cd8c7c6ee\GeolocationSingleListener.java
+C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux.Android\obj\Release\90\res\drawable\fondobeux.png

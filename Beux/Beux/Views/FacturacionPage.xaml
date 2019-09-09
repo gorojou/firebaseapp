@@ -21,13 +21,13 @@
                     <Image x:Name="logo" Source="launcher_foreground.png" Grid.Row="0" Grid.ColumnSpan="2" WidthRequest="150" HeightRequest="150" HorizontalOptions="CenterAndExpand" Margin="20,0,0,0" />
 
                     <Label Text="Recibido: " Grid.Row="1" Grid.Column="0"  Style="{StaticResource LabelStyle}" />
-                    <Label Text=" 567 " Grid.Row="1" Grid.Column="1" Style="{StaticResource LabelStyle}" />
+                    <Label x:Name="valorh" Grid.Row="1" Grid.Column="1" Style="{StaticResource LabelStyle}" FontSize="Large" />
                     <Label Text="Transporte: " Grid.Row="2" Grid.Column="0" Style="{StaticResource LabelStyle}" />
-                    <Label Text="60" Grid.Row="2" Grid.Column="1" Style="{StaticResource LabelStyle}" />
+                    <Label Text="" Grid.Row="2" Grid.Column="1" Style="{StaticResource LabelStyle}" />
                     <Label Text="Puntos: " Grid.Row="3" Grid.Column="0" Style="{StaticResource LabelStyle}" />
-                    <Label Text="130" Grid.Row="3" Grid.Column="1" Style="{StaticResource LabelStyle}" />
-                    <Label Text="Total: " Grid.Row="4" Grid.Column="0" Style="{StaticResource LabelStyle}" />
-                    <Label Text="857 " Grid.Row="4" Grid.Column="1" Style="{StaticResource LabelStyle}" />
+                    <Label Text="" Grid.Row="3" Grid.Column="1" Style="{StaticResource LabelStyle}" />
+                    <Label Text="Total: " Grid.Row="4" Grid.Column="0"  Style="{StaticResource LabelStyle}" />
+                    <Label x:Name="valorh1" Grid.Row="4" Grid.Column="1" Style="{StaticResource LabelStyle}" FontSize="Large" />
                     <Button x:Name="evaluar" Grid.Row="6" Grid.ColumnSpan="2" Style="{StaticResource ButtonActStyle}" Text="Evaluar al Cliente"  Clicked="Evaluar_Clicked" />
 
                 </Grid>

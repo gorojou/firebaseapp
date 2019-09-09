@@ -26,8 +26,9 @@ namespace Beux.Views
             await Task.Delay(2000);
             Dialogs.HideLoading();
 
-            RoomPage myHomePage = new RoomPage();
-            NavigationPage.SetHasNavigationBar(myHomePage, false);
+            var myHomePage = new NavigationPage(new RoomPage());
+
+            NavigationPage.SetHasNavigationBar(myHomePage, true);
             await Navigation.PushModalAsync(myHomePage);
 
         }

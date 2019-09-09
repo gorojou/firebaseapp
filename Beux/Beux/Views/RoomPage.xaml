@@ -6,33 +6,32 @@
              mc:Ignorable="d"
              x:Class="Beux.Views.RoomPage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="+" Clicked="Plus_Clicked"/>
+        <ToolbarItem Text="AGREGAR"   Clicked="Plus_Clicked"/>
         <ToolbarItem Text="?" Clicked="Info_Clicked"/>
 
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
 
-        <AbsoluteLayout>
-           
-           <ListView ItemsSource="{Binding .}" SeparatorVisibility="None"  x:Name="_lstx" RowHeight="120" 
+        <ListView ItemsSource="{Binding .}" SeparatorVisibility="None"  x:Name="_lstx" RowHeight="120" 
 			IsPullToRefreshEnabled="true"
 			ItemSelected="Handle_ItemSelected"
 			Refreshing="Handle_Refreshing"
 			>
-                <ListView.ItemTemplate>
-                    <DataTemplate>
+            <ListView.ItemTemplate>
+                <DataTemplate>
 
-                        <ViewCell>
+                    <ViewCell>
 
-                            <StackLayout BackgroundColor="Violet" Margin="10">
-                                <Label Text="{Binding Name}" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="20"/>
-                            </StackLayout>
-                        </ViewCell>
+                        <StackLayout BackgroundColor="Blue" Margin="10">
+                            <Label Text="{Binding Name}" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="20"/>
+                        </StackLayout>
+                    </ViewCell>
 
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            </AbsoluteLayout>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
     </ContentPage.Content>
 </ContentPage>

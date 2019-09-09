@@ -38,6 +38,6 @@ C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux\obj\Debug\netstandard2.0\
 C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux\obj\Debug\netstandard2.0\Views\ExtensionPage.xaml.g.cs
 C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux\obj\Debug\netstandard2.0\Views\FacturacionPage.xaml.g.cs
 C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux\obj\Debug\netstandard2.0\Views\EvaluarPage.xaml.g.cs
-C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux\obj\Debug\netstandard2.0\Views\AddRoomPage.xaml.g.cs
 C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux\obj\Debug\netstandard2.0\Views\ChatPage.xaml.g.cs
+C:\Users\Ybrahim Miquilena\source\repos\Beux\Beux\Beux\obj\Debug\netstandard2.0\XamlC.stamp

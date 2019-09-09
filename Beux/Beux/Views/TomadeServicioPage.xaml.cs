@@ -1,4 +1,6 @@
 ﻿using Acr.UserDialogs;
+using Beux.Helper;
+using Beux.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,11 +16,31 @@ namespace Beux.Views
     public partial class TomadeServicioPage : ContentPage
     {
         IUserDialogs Dialogs = UserDialogs.Instance;
-        public TomadeServicioPage()
+        FirebaseHelper firebaseHelper = new FirebaseHelper();
+        public  TomadeServicioPage()
         {
             InitializeComponent();
+            
+           
+            
         }
+        protected async override void OnAppearing()
+        {
 
+            base.OnAppearing();
+
+            try
+            {
+                base.OnAppearing();
+                var allUsers = await firebaseHelper.GetPersonListClientes();
+                Lista.ItemsSource = allUsers;
+            }
+
+            catch (Exception ex)
+            {
+                throw new Exception("OnAppearing  Additional information..." + ex, ex);
+            }
+        }
         public async void OnClickActivo(object sender, EventArgs args)
         {
             Dialogs.ShowLoading("Espere por favor...");
@@ -39,5 +61,16 @@ namespace Beux.Views
             NavigationPage.SetHasNavigationBar(myHomePage, false);
             await Navigation.PushModalAsync(myHomePage);
         }
+
+
+        private void EvetClicked(object s, SelectedItemChangedEventArgs e)
+        {
+
+            var obj = e.SelectedItem;
+
+
+        }
     }
+
+
 }

@@ -18,7 +18,7 @@
                         <RowDefinition Height="50"/>
                         <RowDefinition Height="50"/>
                         <RowDefinition Height="50"/>
-                        <RowDefinition Height="170"/>
+                        <RowDefinition Height="100"/>
                         <RowDefinition Height="50"/>
                         <RowDefinition Height="50"/>
                         <RowDefinition Height="50"/>
@@ -32,10 +32,14 @@
                     <Image x:Name="noneimg" Source="none.png" Grid.Row="1" Grid.Column="2" WidthRequest="40" HeightRequest="40" HorizontalOptions="CenterAndExpand" Margin="0,0,20,0"  />
                     <controls:CheckBox Grid.Row="2" Grid.Column="2" x:Name="none" Text="Otro"  IsChecked="{Binding YourProperty}" Type="Check" Color="#cf453c" />
                     <Label x:Name="anexarlbl" Grid.Row="3" Grid.Column="0"  Text="Anexar Fotografías" TextColor="#cf453c"  Style="{StaticResource LabelStyle}" Margin="3,3,3,3" VerticalOptions="CenterAndExpand"   />
+                    <ic:CircleImage x:Name="image" Source="user.jpg" Grid.Row="4" Grid.Column="0" WidthRequest="70" HeightRequest="70" HorizontalOptions="Center" />
+                    <ic:CircleImage x:Name="image1" Source="user.jpg" Grid.Row="4" Grid.Column="1" WidthRequest="70" HeightRequest="70" HorizontalOptions="Center" />
+                    <ic:CircleImage x:Name="image2" Source="user.jpg" Grid.Row="4" Grid.Column="2" WidthRequest="70" HeightRequest="70" HorizontalOptions="Center" />
+
                     <ic:CircleImage 
                     VerticalOptions="Center"
                     
-                    x:Name="takePhoto" Grid.Row="3" Grid.Column="1"  HeightRequest="25" WidthRequest="25" Source="camara.png">
+                    x:Name="takePhoto" Grid.Row="5" Grid.Column="0"  HeightRequest="25" WidthRequest="25" Source="camara.png">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnclickTakePhoto" />
                         </Image.GestureRecognizers>
@@ -43,34 +47,15 @@
                     <ic:CircleImage 
                     VerticalOptions="Center"
                     
-                     x:Name="pickPhoto" Grid.Row="3" Grid.Column="2"  HeightRequest="25" WidthRequest="25" Source="carpeta.png">
+                     x:Name="pickPhoto" Grid.Row="5" Grid.Column="1"  HeightRequest="25" WidthRequest="25" Source="carpeta.png">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnclickPickPhoto" />
                         </Image.GestureRecognizers>
                     </ic:CircleImage>
-               <flv:FlowListView FlowColumnCount="3" Grid.Row="4" Grid.ColumnSpan="3"
-                SeparatorVisibility="Default"   
-                HasUnevenRows="True"  
-                FlowItemTappedCommand="{Binding ItemTappedCommand}"   
-                FlowItemsSource="{Binding Items}">
-
-                        <flv:FlowListView.FlowColumnTemplate>
-                            <DataTemplate>
-                                <Frame BackgroundColor="#cf453c"  
-                Margin="5">
-                                    <Label HorizontalOptions="Fill"   
-                    VerticalOptions="Fill"   
-                    TextColor="White"  
-                    XAlign="Center"  
-                    YAlign="Center"   
-                    Text="{Binding }"/>
-                                </Frame>
-                            </DataTemplate>
-                        </flv:FlowListView.FlowColumnTemplate>
-                    </flv:FlowListView>
+              
                     <Label x:Name="messageLabel" Grid.Row="7" Grid.ColumnSpan="3" Text="No apareceran fotos sin permiso del administrador"   Style="{StaticResource LabelNotificacion}" Margin="3,3,3,3" VerticalOptions="CenterAndExpand"   />
 
-                    <Button x:Name="signIn" Grid.Row="7" Grid.ColumnSpan="3" Style="{StaticResource ButtonActStyle}" Text="Crear Perfil" Clicked="OnCrearPerfilClick" />
+                    <Button x:Name="crear" Grid.Row="7" Grid.ColumnSpan="3" Style="{StaticResource ButtonActStyle}" Text="Crear Perfil" Clicked="OnCrearPerfilClick" />
                 </Grid>
 
             </StackLayout>

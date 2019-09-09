@@ -14,6 +14,7 @@ using Xamarin.Forms.Xaml;
 using System.IO;
 using Firebase.Storage;
 using Beux.ViewModels.Login;
+using Beux.Services.FirebaseAuth;
 
 namespace Beux.Views
 {
@@ -21,12 +22,14 @@ namespace Beux.Views
     public partial class RegistroPage : ContentPage
     {
         FirebaseHelper firebaseHelper = new FirebaseHelper();
+        private IFirebaseAuthService _firebaseService;
         IUserDialogs Dialogs = UserDialogs.Instance;
         MediaFile files;
         SignUpViewModel viewModel;
         public RegistroPage()
         {
             InitializeComponent();
+            _firebaseService = DependencyService.Get<IFirebaseAuthService>();
             this.BindingContext = viewModel;
         }
         public async void OnclickPickPhoto(object sender, EventArgs args)
@@ -121,10 +124,13 @@ namespace Beux.Views
                 {
                     var selectedValue = genero.Items[genero.SelectedIndex];
 
+                    string user = _firebaseService.GetUserId();
+
+
                     Dialogs.ShowLoading("Registrando"); ;
                     await Task.Delay(4000);
                     Dialogs.HideLoading();
-                    await firebaseHelper.AddPerson(nickname.Text, email.Text, celular.Text, codPromocional.Text, selectedValue.ToString(), password.Text, true, true);
+                    await firebaseHelper.AddPerson(user, nickname.Text, email.Text, celular.Text, codPromocional.Text, selectedValue.ToString(), password.Text, "true", "true","P","I", "N");
                     nickname.Text = string.Empty;
                     email.Text = string.Empty;
                     celular.Text = string.Empty;
@@ -132,12 +138,12 @@ namespace Beux.Views
                     password.Text = string.Empty;
                     passwordconf.Text = string.Empty;
                     var stroageImage = await new FirebaseStorage("upick-app-c921d.appspot.com")
-                       .Child('"'+nickname.Text+'"')
-                       .Child('"' + nickname.Text+"'.jpg")
+                       .Child("Prestador")
+                       .Child(user+".jpg")
                        .PutAsync(files.GetStream());
                     await DisplayAlert("Success", "Se ha registrado exitosamente", "OK");
 
-                    
+
                     CrearPerfilPage myHomePage = new CrearPerfilPage();
                     NavigationPage.SetHasNavigationBar(myHomePage, false);
                     await Navigation.PushModalAsync(myHomePage);

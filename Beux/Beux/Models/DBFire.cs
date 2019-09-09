@@ -36,6 +36,7 @@ namespace Beux.Models
 
         public async Task saveRoom(Room rm)
         {
+           
             await fbClient.Child("ChatApp")
                     .PostAsync(rm.ToString());
 

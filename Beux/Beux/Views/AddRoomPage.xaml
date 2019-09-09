@@ -11,7 +11,7 @@
                 <TableSection>
                     <EntryCell  x:Name="_rootName" Placeholder="Nombre Room"/>
                     <ViewCell>
-                        <Button Text="Crear" Clicked="Handle_Clicked"/>
+                        <Button Text="Crear" Clicked="Handle_Clicked" />
                     </ViewCell>
                 </TableSection>
             </TableView.Root>
